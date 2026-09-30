@@ -1,0 +1,73 @@
+/* DV MedKing — Color tokens
+   Locked brand palette. Primary green #00533F is the anchor — do not alter.
+   RULE: On green surfaces use white text + yellow accent.
+         NEVER place yellow text on a white background. */
+
+:root {
+  /* ---- Brand core (locked) ---- */
+  --dv-green: #00533F;        /* primary — header, primary button, headings */
+  --dv-green-bright: #0A7F64; /* link / hover / success */
+  --dv-yellow: #FDB813;       /* accent — icon badge, CTA, highlight */
+
+  /* ---- Green ramp (derived from #00533F for depth / states) ---- */
+  --dv-green-900: #003328;
+  --dv-green-800: #00422F;
+  --dv-green-700: #00533F;    /* = --dv-green */
+  --dv-green-600: #0A7F64;    /* = --dv-green-bright */
+  --dv-green-500: #189A7B;
+  --dv-green-300: #7FC4B1;
+  --dv-green-100: #D6ECE5;
+  --dv-green-50:  #EAF5F1;
+
+  /* ---- Yellow ramp ---- */
+  --dv-yellow-600: #E1A100;   /* pressed / darker accent */
+  --dv-yellow-500: #FDB813;   /* = --dv-yellow */
+  --dv-yellow-300: #FFD877;
+  --dv-yellow-100: #FFF1CF;
+
+  /* ---- Neutrals ---- */
+  --dv-white: #FFFFFF;
+  --dv-paper: #F1F1F1;        /* secondary background */
+  --dv-mist:  #F7F8F8;        /* subtle fill / hover on white */
+  --dv-line:  #E3E6E5;        /* hairline borders */
+  --dv-line-strong: #CDD3D1;
+  --dv-ink:   #222222;        /* body text */
+  --dv-ink-soft: #525B58;     /* secondary text */
+  --dv-ink-faint: #8A938F;    /* tertiary / placeholder */
+
+  /* ---- Semantic ---- */
+  --dv-success: #0A7F64;
+  --dv-success-soft: #D6ECE5;
+  --dv-warning: #E1A100;
+  --dv-warning-soft: #FFF1CF;
+  --dv-danger: #C5372C;
+  --dv-danger-soft: #F8E0DD;
+  --dv-info: #0A7F64;
+
+  /* ---- Semantic aliases (use these in components) ---- */
+  --surface-page: var(--dv-white);
+  --surface-subtle: var(--dv-paper);
+  --surface-card: var(--dv-white);
+  --surface-brand: var(--dv-green);
+  --surface-brand-deep: var(--dv-green-900);
+  --surface-hover: var(--dv-mist);
+
+  --text-heading: var(--dv-green);
+  --text-body: var(--dv-ink);
+  --text-muted: var(--dv-ink-soft);
+  --text-faint: var(--dv-ink-faint);
+  --text-on-brand: var(--dv-white);
+  --text-accent-on-brand: var(--dv-yellow);
+  --text-link: var(--dv-green-bright);
+  --text-link-hover: var(--dv-green-800);
+
+  --border-default: var(--dv-line);
+  --border-strong: var(--dv-line-strong);
+  --border-brand: var(--dv-green);
+  --border-focus: var(--dv-green-bright);
+
+  --accent: var(--dv-yellow);
+  --accent-pressed: var(--dv-yellow-600);
+
+  --focus-ring: 0 0 0 3px rgba(10, 127, 100, 0.35);
+}

@@ -1,0 +1,79 @@
+/* DV MedKing — Base element defaults + a few utility helpers.
+   Lightweight; components carry their own styling. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  margin: 0;
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--text-link-hover); }
+
+/* ---- Reusable brand atoms ---- */
+
+/* Eyebrow / overline label */
+.dv-overline {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-overline);
+  letter-spacing: var(--tracking-overline);
+  text-transform: uppercase;
+  color: var(--dv-green-bright);
+}
+
+/* Large 01 / 02 / 03 numeral motif */
+.dv-numeral {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-numeral);
+  line-height: 0.8;
+  letter-spacing: var(--tracking-tight);
+  color: var(--dv-green-100);
+}
+
+/* Round yellow icon badge */
+.dv-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-round);
+  background: var(--dv-yellow);
+  color: var(--dv-green);
+  flex: none;
+}
+
+/* On-brand panel helper */
+.dv-on-brand {
+  background: var(--surface-brand);
+  color: var(--text-on-brand);
+}
+.dv-on-brand h1, .dv-on-brand h2, .dv-on-brand h3,
+.dv-on-brand h4, .dv-on-brand h5, .dv-on-brand h6 {
+  color: var(--text-on-brand);
+}

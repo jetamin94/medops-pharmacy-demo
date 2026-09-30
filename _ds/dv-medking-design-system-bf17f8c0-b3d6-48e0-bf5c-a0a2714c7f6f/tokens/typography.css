@@ -1,0 +1,43 @@
+/* DV MedKing — Typography tokens
+   Montserrat → display / marketing (700–900, tight, can be uppercased)
+   Public Sans → body / UI (400–700) */
+
+:root {
+  /* ---- Families ---- */
+  --font-display: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace;
+
+  /* ---- Weights ---- */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-black: 900;
+
+  /* ---- Type scale (px) ---- */
+  --text-display: 64px;   /* hero marketing */
+  --text-h1: 48px;
+  --text-h2: 36px;
+  --text-h3: 28px;
+  --text-h4: 22px;
+  --text-lg: 18px;
+  --text-base: 16px;
+  --text-sm: 14px;
+  --text-xs: 12px;
+  --text-overline: 12px;  /* uppercase eyebrow */
+  --text-numeral: 120px;  /* 01 / 02 / 03 motif */
+
+  /* ---- Line heights ---- */
+  --leading-tight: 1.05;
+  --leading-snug: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* ---- Letter spacing ---- */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-overline: 0.14em; /* eyebrows / labels */
+}
